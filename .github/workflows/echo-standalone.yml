@@ -1,4 +1,6 @@
 name: run-echo
+on:
+  workflow_call:
 jobs: #must be plural
   echo: #indented - belongs to parent, name doesn't matter
     runs-on: ubuntu-20.04 #reserved word, check runners on github docs
