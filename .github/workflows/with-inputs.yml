@@ -1,0 +1,17 @@
+name: run-echo
+on:
+  workflow_call:
+    inputs:
+      some-input:
+        required: false
+        type: string
+jobs: #must be plural
+  echo: #indented - belongs to parent, name doesn't matter
+    runs-on: ubuntu-20.04 #reserved word, check runners on github docs
+    steps: 
+      - name: Say hello
+        run: echo "Hello World, from standalone action!"
+      - name: Say goodbye
+        run: echo "Goodbye World, from standalone action!"
+      - name: Uses param
+        run: echo ${{ inputs.some-input }}
