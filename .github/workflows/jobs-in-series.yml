@@ -10,7 +10,7 @@ jobs:
         run: sleep 5
   say-goodbye:
     runs-on: ubuntu-20.04
-    needs: say-hello
+#     needs: say-hello
     steps: 
       - name: Say goodbye
         run: echo "Goodbye World!!!"
