@@ -1,0 +1,11 @@
+name: pull request opened
+on:
+  pull_request:
+    types: [opened]
+    branches: [ "main" ]
+jobs:
+  echo:
+    runs-on: ubuntu-22.04
+      steps:
+        - name: Checkout
+          run: echo "Some text output on PR to main branch bening opened"
