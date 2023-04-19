@@ -1,0 +1,11 @@
+name: pull request closed
+on:
+  pull_request:
+    types: [closed]
+    branches: [ "main" ]
+jobs:
+  echo:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: PR Closed msg
+        run: echo "Some text output on PR to main branch bening CLOSED"
