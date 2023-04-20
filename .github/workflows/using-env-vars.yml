@@ -1,4 +1,4 @@
-name: my-workflow
+name: using-env-vars
 on: workflow_dispatch #manual trigger
 jobs: #must be plural
   env-vars: #indented - belongs to parent, name doesn't matter
