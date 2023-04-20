@@ -1,8 +1,8 @@
 name: using-env-vars
-on: workflow_dispatch #manual trigger
-jobs: #must be plural
-  env-vars: #indented - belongs to parent, name doesn't matter
-    runs-on: ubuntu-20.04 #reserved word, check runners on github docs
+on: workflow_dispatch
+jobs:
+  env-vars:
+    runs-on: ubuntu-20.04
     steps: 
       - name: Print env vars
         run: env
